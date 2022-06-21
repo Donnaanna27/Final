@@ -1,3 +1,5 @@
+package GoTest;
+
 import PageRun.ChromeRun;
 import StepObj.RegStep;
 import org.testng.Assert;

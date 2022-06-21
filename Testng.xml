@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation Suite" thread-count="3" parallel="tests">
+
+    <test name="TestSuit1" parallel="tests" >
+        <classes>
+            <class name="PageRun.KalataRun" />
+        </classes>
+    </test>
+
+    <test name="TestSuit2" parallel="tests">
+        <classes>
+            <class name="PageRun.ChromeRun" />
+        </classes>
+    </test>
+    <test name="TestSuit3" parallel="tests">
+        <classes>
+            <class name="GoTest.KalataTest" />
+        </classes>
+    </test>
+    <test name="TestSuit4" parallel="tests">
+        <classes>
+            <class name="GoTest.LoginTest" />
+        </classes>
+    </test>
+    <test name="TestSuit5" parallel="tests">
+        <classes>
+            <class name="GoTest.RegistrationTest" />
+        </classes>
+    </test>
+</suite>

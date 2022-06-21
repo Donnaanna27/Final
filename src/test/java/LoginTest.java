@@ -1,6 +1,8 @@
+package GoTest;
+
 import PageRun.KalataRun;
 import StepObj.LoginStep;
-//import org.testng.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import static DataObj.LoginData.*;
 import static com.codeborne.selenide.Selenide.sleep;
@@ -14,7 +16,7 @@ public class LoginTest extends KalataRun {
                 .Email(email)
                 .Password(password)
                 .SubbmitButton();
-        //Assert.assertTrue(Steps.SubbmitButton.isDisplayed());
+        Assert.assertTrue(Steps.SubbmitButton.isDisplayed());
         sleep(3000);
 
     }

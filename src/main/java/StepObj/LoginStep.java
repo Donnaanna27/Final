@@ -4,6 +4,7 @@ import PageObj.Login;
 import io.qameta.allure.Step;
 
 public class LoginStep extends Login {
+    @Step("Login Button is - {press}")
     public LoginStep gotopage() {
         Registarionbtn.click();
         return this;
@@ -19,7 +20,7 @@ public class LoginStep extends Login {
         PasswordINput.setValue(Password);
         return this;
     }
-
+    @Step("Login  Button is - {press}")
     public LoginStep SubbmitButton() {
         SubbmitButton.click();
         return this;

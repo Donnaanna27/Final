@@ -4,10 +4,12 @@ import PageObj.RegPage;
 import io.qameta.allure.Step;
 
 public class RegStep extends RegPage {
+    @Step("Reg Button is - {Click}")
     public RegStep GotoRegpage(){
         Registarionbtn.click();
         return this;
     }
+    @Step("Reg Button is - {press}")
     public RegStep Regbtn(){
         Regbtn.click();
         return this;
@@ -37,10 +39,13 @@ public class RegStep extends RegPage {
         LastnameInput.setValue(LastName);
         return this;
     }
+    @Step("Chackbox  is - {Chack}")
     public RegStep TermChackBox(){
         TermChackBox.click();
         return this;
     }
+    @Step("Regbutton Button is - {press}")
+
     public RegStep Subbmitbtn(){
         Subbmitbtn.click();
         return this;

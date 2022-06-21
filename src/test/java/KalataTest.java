@@ -1,3 +1,5 @@
+package GoTest;
+
 import PageRun.KalataRun;
 import StepObj.KalataStep;
 import org.testng.Assert;
